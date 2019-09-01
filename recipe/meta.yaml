@@ -1,5 +1,5 @@
 {% set name = "jekyll-seo-tag" %}
-{% set version = "2.6.1" %}
+{% set version = "2.5.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: d5986ff4599f2f2dc8e3e5ab231e245a36aa5820f70f12faa220444bb2a02edd
+  sha256: 54b3d0fd6c01375f9281db3a39c10ebf7c900071bd1bb6b806a53e0262c9cea7
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
@@ -22,7 +22,7 @@ requirements:
     - ruby
   run:
     - ruby
-    - rb-jekyll >=3.3,<5.0
+    - rb-jekyll >=3.3,<4
 
 test:
   commands:
