@@ -1,5 +1,5 @@
 {% set name = "jekyll-seo-tag" %}
-{% set version = "2.6.1" %}
+{% set version = "2.8.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: d5986ff4599f2f2dc8e3e5ab231e245a36aa5820f70f12faa220444bb2a02edd
+  sha256: 3f2ed1916d56f14ebfa38e24acde9b7c946df70cb183af2cb5f0598f21ae6818
 
 build:
   noarch: generic
